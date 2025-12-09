@@ -5,7 +5,7 @@ import { Footer } from '@/components/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/components/theme-provider';
 
-const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://reformpilot.ai';
+const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://resumepilot.ai';
 
 export const metadata: Metadata = {
   title: 'ResumePilot.ai - AI-Powered CV & Cover Letter Generator',
@@ -37,6 +37,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: 'sghQbcuLftkkgzypxn-im4yjlxVLpFSS_4ChdcveR54',
+  },
 };
 
 export default function RootLayout({
@@ -47,7 +50,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-<meta name="google-site-verification" content="sghQbcuLftkkgzypxn-im4yjlxVLpFSS_4ChdcveR54" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
